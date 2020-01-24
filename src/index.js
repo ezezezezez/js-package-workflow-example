@@ -1,2 +1,5 @@
-console.log("aw" + "ada");
-console.log("asd" + "asdasda");
+export * from "./Ripple";
+
+export * from "./Ring";
+
+export * from "./Ellipsis";
