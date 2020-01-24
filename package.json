@@ -1,7 +1,7 @@
 {
   "name": "js-package-workflow-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "js package workflow example",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "sideEffects": false,
