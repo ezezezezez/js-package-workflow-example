@@ -16,7 +16,9 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:staged": "jest --findRelatedTests",
-    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "predeploy": "npm run storybook:build",
+    "deploy": "gh-pages -d storybook-static"
   },
   "husky": {
     "hooks": {
@@ -52,6 +54,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.2.0",
     "husky": "^4.2.0",
     "jest": "^25.1.0",
     "lint-staged": "^10.0.2",
@@ -81,5 +84,6 @@
     "moduleNameMapper": {
       "\\.css$": "<rootDir>/__mocks__/styles.js"
     }
-  }
+  },
+  "homepage": "https://ezezezezez.github.io/js-package-workflow-example/"
 }
