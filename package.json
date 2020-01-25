@@ -18,7 +18,8 @@
     "test:staged": "jest --findRelatedTests",
     "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "predeploy": "npm run storybook:build",
-    "deploy": "gh-pages -d storybook-static"
+    "deploy": "gh-pages -d storybook-static",
+    "prepublishOnly": "npm run build"
   },
   "husky": {
     "hooks": {
@@ -31,7 +32,10 @@
       "npm run test:staged"
     ]
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "example"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -85,5 +89,8 @@
       "\\.css$": "<rootDir>/__mocks__/styles.js"
     }
   },
-  "homepage": "https://ezezezezez.github.io/js-package-workflow-example/"
+  "homepage": "https://ezezezezez.github.io/js-package-workflow-example/",
+  "files": [
+    "dist"
+  ]
 }
